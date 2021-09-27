@@ -21,12 +21,12 @@ const NavBarStyle = styled.div`
 const Avatar = styled.img`
     height: 60px;
     width: 60px;
-    background: #22577a;
+    background: transparent;
     border-radius:20px;
     transition: 0.5s;
     
     :hover {
-      background: #fff;
+      background:#22577a;
     }
     
 
