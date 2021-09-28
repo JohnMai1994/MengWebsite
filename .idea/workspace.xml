@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="805d8751-dd08-49f1-953f-b87a561bc7f1" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/image/moon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/mountains_behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/mountains_front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/stars.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +81,9 @@
       <workItem from="1632236460943" duration="1743000" />
       <workItem from="1632447698140" duration="723000" />
       <workItem from="1632537416290" duration="6969000" />
-      <workItem from="1632678565982" duration="11021000" />
+      <workItem from="1632678565982" duration="14786000" />
+      <workItem from="1632793851396" duration="315000" />
+      <workItem from="1632803213843" duration="6845000" />
     </task>
     <servers />
   </component>
