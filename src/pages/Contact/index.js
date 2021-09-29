@@ -86,7 +86,7 @@ const Text2 = styled.span`
 
 const TextBox = styled.div`
     position: relative;
-    height: 200vh;
+    height: 100vh;
     padding: 100px;
     background: #160419;
     text-align: center;
@@ -110,6 +110,7 @@ const TextBox = styled.div`
 const ContactBox = styled.section`
     position: relative;
     min-width: 1100px;
+    max-width: 1400px;
     height: 550px;
     
     display: flex;
@@ -244,15 +245,146 @@ const ContactInfoSocial = styled.ul`
 `
 
 
-
-
 const ContactForm = styled.div`
     min-width: calc(100% - 465px) ;
     height: 100%;
 
-    background: red;
+    background: transparent;
     border-radius: 20px;
     margin-left: 10px;
+    text-align: left;
+    padding: 40px;
+    
+    
+    h2{
+        font-size: 1.5em;
+        color: #3e1f92;
+    
+    }
+`
+
+
+const FormBox = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+
+
+
+`
+
+const InputBox1 = styled.div`
+    position: relative;
+    margin-bottom: 35px;
+    width: 47%;
+    
+    input {
+        width: 100%;
+        resize: none;
+        padding: 5px 0;
+        font-size: 18px;
+        font-weight: 300;
+        color: #333;
+        border: none;
+        border-bottom: 1px #e1e0e6 solid;
+        outline: none;
+        font-family: sans-serif;
+        
+        :focus,:valid{
+            border-bottom: 3px #3e1f92 solid;
+        
+        }
+    }
+    
+    
+    label {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        padding: 5px 0;
+        color: #89889d;
+        pointer-events: none;
+        font-size: 18px;
+        font-weight: 300;
+        transition: 0.3s;
+    }
+    
+    input:focus ~ label, 
+    input:valid ~ label  {
+        top: -18px;
+        color: #6a47c7;
+        font-size: 12px;
+        
+    
+    }
+    
+
+
+`
+
+const InputBox2 = styled.div`
+    position: relative;
+    margin-bottom: 35px;
+    width: 100%;
+    
+    textarea {
+        width: 100%;
+        height: 120px;
+        resize: none;
+        padding: 5px 0;
+        font-size: 18px;
+        font-weight: 300;
+        color: #333;
+        border: none;
+        outline: none;
+        border-bottom: 1px #e1e0e6 solid;
+        font-family: sans-serif;
+    }
+    
+    label {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        padding: 5px 0;
+        color: #89889d;
+        pointer-events: none;
+        font-size: 18px;
+        font-weight: 300;
+        transition: 0.3s;
+    }
+    
+    textarea:focus ~ label, 
+    textarea:valid ~ label  {
+        top: -18px;
+        color: #6a47c7;
+        font-size: 12px;
+        
+    
+    }
+    
+    input[type="submit"] {
+        position: relative;
+        cursor: pointer;
+        background: #3e1f92;
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        transition: 0.3s;
+        
+        :hover{
+           background: #774ef0;
+        }
+    
+    }
+    
+    
+
+
+
 `
 
 function Contact() {
@@ -321,7 +453,7 @@ function Contact() {
                             <span>
                                 <FontAwesomeIcon icon={faEnvelope} size={"lg"} color={"#fa949d"}/>
                             </span>
-                            <span>Hello@johnmai.com</span>
+                            <span>mjd64929@icloud.com</span>
                         </li>
                         <li>
                             <span>
@@ -329,12 +461,11 @@ function Contact() {
                             </span>
                             <span>109 Olive Ave, Toronto, ON</span>
                         </li>
-
                     </ContactInfoMSG>
                     <ContactInfoSocial>
                         <li>
                             <a href="#">
-                                <Icon icon={faFacebookF} size={"lg"} color={"#fa949d"} />
+                                <Icon icon={faFacebookF} size={"lg"} color={"#fa949d"}/>
                             </a>
                         </li>
                         <li>
@@ -352,12 +483,44 @@ function Contact() {
                                 <Icon icon={faLinkedinIn} size={"lg"} color={"#fa949d"}/>
                             </a>
                         </li>
-
                     </ContactInfoSocial>
-
-
                 </ContactInfo>
                 <ContactForm>
+                    <h2>Send a Message</h2>
+                    <FormBox>
+                        <InputBox1>
+                            <input type="text" required/>
+                            <label>First Name</label>
+                        </InputBox1>
+
+                        <InputBox1>
+                            <input type="text" required/>
+                            <label>Last Name</label>
+                        </InputBox1>
+
+                        <InputBox1>
+                            <input type="text" required/>
+                            <label>Email Address</label>
+                        </InputBox1>
+
+                        <InputBox1>
+                            <input type="text" required/>
+                            <label>Phone Number</label>
+                        </InputBox1>
+
+                        <InputBox2>
+                            <textarea name="" id="" required >
+
+                            </textarea>
+                            <label>Write Your Message...</label>
+
+                        </InputBox2>
+
+                        <InputBox2>
+                            <input type="submit" value={"Send"}/>
+                        </InputBox2>
+                    </FormBox>
+
 
                 </ContactForm>
 

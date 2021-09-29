@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="805d8751-dd08-49f1-953f-b87a561bc7f1" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +19,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/aircall" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FE_practice/fe_practice" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -83,7 +80,8 @@
       <workItem from="1632537416290" duration="6969000" />
       <workItem from="1632678565982" duration="14786000" />
       <workItem from="1632793851396" duration="315000" />
-      <workItem from="1632803213843" duration="6845000" />
+      <workItem from="1632803213843" duration="7959000" />
+      <workItem from="1632848352410" duration="5240000" />
     </task>
     <servers />
   </component>
