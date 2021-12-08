@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Project from "./pages/Project";
+import Home from "./pages/Home";
 
 
 const Body = styled.div`
@@ -39,13 +40,6 @@ function App() {
 }
 
 
-const Home = () => {
-    return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
 
-    )
-}
 
 export default App;

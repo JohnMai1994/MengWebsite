@@ -86,7 +86,7 @@ const Text2 = styled.span`
 
 const TextBox = styled.div`
     position: relative;
-    height: 100vh;
+    height: 90vh;
     padding: 100px;
     background: #160419;
     text-align: center;

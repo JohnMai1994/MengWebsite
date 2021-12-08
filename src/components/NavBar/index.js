@@ -1,8 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import logo from "../../image/Meng.png"
-
 
 
 const NavBarStyle = styled.div`
@@ -18,19 +17,48 @@ const NavBarStyle = styled.div`
     
 `
 
-const Avatar = styled.img`
-    height: 60px;
-    width: 60px;
-    background: transparent;
-    border-radius:20px;
-    transition: 0.5s;
+const waves = keyframes`
+   to {
+    transform: translateY(-60%) rotate(540deg);
+   }
+
+
+`
+
+const Avatar = styled.div`
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
     
-    :hover {
-      background:#22577a;
+    :before{
+      content: "";
+      background: url(${logo});
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    
+    }
+    
+    :after{
+      content: "";
+      position: absolute;
+      width: 160%;
+      height: 160%;
+      background-color: hsla(0, 0%, 100%, 0.9);
+      bottom: 0;
+      left: -50%;
+      border-radius: 35%;
+      animation: ${waves} 5s ease-in-out alternate infinite;
     }
     
 
+
 `
+
 
 const Lists = styled.ul`
     display: flex;
@@ -79,18 +107,16 @@ const LinkStyle = styled(Link)`
 `;
 
 
-
-
-
 function NavBar() {
 
     return (
         <NavBarStyle>
             <LinkStyle to={"/"}>
-                <Avatar src={logo} alt=""/>
+
+                <Avatar/>
             </LinkStyle>
             <Lists>
-                <LinkStyle to={"/"} >
+                <LinkStyle to={"/"}>
                     <Item>主页 Home</Item>
                 </LinkStyle>
                 <LinkStyle to={"/project"}>
@@ -99,7 +125,7 @@ function NavBar() {
                 <LinkStyle to={"/about"}>
                     <Item>关于 About</Item>
                 </LinkStyle>
-                <LinkStyle to={"/contact"} >
+                <LinkStyle to={"/contact"}>
                     <Item>联系 Contact</Item>
                 </LinkStyle>
             </Lists>
